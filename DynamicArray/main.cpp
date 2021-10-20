@@ -13,6 +13,11 @@ int main() {
     // 1. initialize
     vector<int> v0;
     vector<int> v1(5, 0);
+
+    for(int &item : v1)
+    	cout<<item<<" ";
+
+    cout<<endl;
     // 2. make a copy
     vector<int> v2(v1.begin(), v1.end());
     vector<int> v3(v2);
